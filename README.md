@@ -21,7 +21,7 @@ _**By Vichitra Pool (Note) on August 18th, 2016_
 |Replace any Output numbers that can be divided by 3 with “ping” | 3, 6, 18 | ping, ping, ping
 |Replace any Output numbers that can be divided by 5 with “pong” | 5, 10, 20 | pong, pong, pong
 |Replace any Output numbers that can be divided by 15 with “ping-pong” | 15, 30, 45 | ping-pong, ping-pong, ping-pong
-
+|When the user input new number and hit enter, old output will clear and new output will show | (3), (7)| 1, 2, ping. (Once new input enter, Out put will show: 1, 2, ping, 4, pong, ping, 7)
 
 ## Setup/Installation Requirements
 1. Copy Talayruk.github.io/Ping-Pong to web browser
