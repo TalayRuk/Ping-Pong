@@ -15,17 +15,12 @@ _**By Vichitra Pool (Note) on August 18th, 2016_
 ## Behavior Driven Development
 |Behavior | input | output|
 |--- | :---: | :---: |
--Only allow user to input positive number | A, a, -1, | N/A, N/A, N/A
--1 is the minimum number that can be entered | 0, 1 | N/A, 1
--Once user input the number, Output numbers show as a listing that range from 1 to the user’s input number. | 4 I 1, 2, 3, 4. (in the bullet point listing form).
--If  any of the listing output numbers can be divided by 3, replace the numbers with “ping”| 4 | 1, 2, ping, 4.
--If any of the listing out put numbers can be divided by 5, replace the numbers with “pong” | 7 | 1, 2, ping, 4, pong, ping, 7
-
--Replace any output numbers that can be divided by 3 with “ping” | 1, 2, 3 | 1, 2, ping
-
--Replace any output numbers that can be divided by 5 with “pong” | 4, 5 | 4, pong
-
--Replace any output numbers that can be divided by 15 with “ping-pong” | 28, 29, 30 | ping-pong
+|Only allow user to input positive number | A, a, |1, | N/A, N/A, N/A (Please enter positive number only)
+|1 is the minimum number that can be entered | 0, 1 | N/A, 1
+|Once user input the number, Output numbers show as a listing that range from 1 to the user’s input number. | 4 | 1, 2, 3, 4. (in the bullet point listing form).
+|Replace any output numbers that can be divided by 3 with “ping” | 3, 6, 18 | ping, ping, ping
+|Replace any output numbers that can be divided by 5 with “pong” | 5, 10, 20 | pong, pong, pong
+|Replace any output numbers that can be divided by 15 with “ping-pong” | 15, 30, 45 | ping-pong, ping-pong, ping-pong   
 
 
 ## Setup/Installation Requirements
