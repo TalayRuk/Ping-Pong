@@ -9,11 +9,11 @@ var pingPong = function(inputN) {
 
 $(document).ready(function() {
   $(".ping-pong .btn" ).click(function() {
-    var inputN = (parseInt$("inputNumber").val());
+    var inputN = (parseInt$(".inputNumber").val());
     alert(inputN);
     // if (inputN >= 1) {
     //   var output = pingPong(inputN)
     // }
-  
+
   });
 });
