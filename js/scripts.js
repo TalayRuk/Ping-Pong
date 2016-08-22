@@ -4,23 +4,20 @@ var pingPong = function(inputN) {
     result.push(n);
   }
   return result;
+  console.log("result");
 }
 
 
 $(document).ready(function() {
-  $(".ping-pong .btn" ).click(function() {
-
-    var inputN = parseInt($(".inputNumber").val());
-    alert(inputN);
-    // need to figure out how to reset the enter number ..using
-    // submit instead of click & event preventDefault ..change submit
-    // btn type
+  $(".ping-pong" ).submit(function(event) {
+    event.preventDefault();
+    var inputN = parseInt($("#inputNumber").val());
     if (inputN >= 1) {
       var output = pingPong(inputN);
-      for (var i = 1; i < output.length; i++); {
-      $(".showoutput").append("<li>" + output[i] + "</li>");
-      }
-    }else {
+        for (var i = ; i < output.length; i++) {
+        $(".showoutput").append("<li>" + output[i] + "</li>");
+        }
+    } else {
       $(".showoutput").append("Please enter only number more than 1!")
     }
 
