@@ -1,5 +1,7 @@
 var pingPong = function(inputN) {
-  var result = [];
+  var result = "";
+  if ()
+
   for (var n = 1; n < inputN; n++) {
     result.push(n);
   }
