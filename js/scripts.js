@@ -21,7 +21,7 @@ $(document).ready(function() {
       $(".showoutput").append("<li>" + output[i] + "</li>");
       }
     }else {
-      $(".showoutput").text("Please enter only number more than 1!")
+      $(".showoutput").append("Please enter only number more than 1!")
     }
 
 
