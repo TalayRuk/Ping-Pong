@@ -15,5 +15,5 @@ $(document).ready(function() {
     //   var output = pingPong(inputN)
     // }
     event.preventDefault();
-  }
+  });
 });
