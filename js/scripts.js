@@ -8,7 +8,8 @@ var pingPong = function(inputN) {
 
 
 $(document).ready(function() {
-  $(".ping-pong .btn" ).submit(function(event) {
+  $(".ping-pong .btn" ).click(function() {
+
     var inputN = parseInt($(".inputNumber").val());
     alert(inputN);
     // need to figure out how to reset the enter number ..using
@@ -17,12 +18,12 @@ $(document).ready(function() {
     if (inputN >= 1) {
       var output = pingPong(inputN);
       for (var i = 1; i < output.length; i++); {
-      $(".showoutput").append("<li>" + output(i) + "</li>");
+      $(".showoutput").append("<li>" + output[i] + "</li>");
       }
     }else {
       $(".showoutput").text("Please enter only number more than 1!")
     }
 
-    event.preventDefault();
+
   });
 });
