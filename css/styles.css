@@ -31,6 +31,10 @@ body {
   color: #922B21;
 }
 
+.Rules p {
+  color: yellow;
+}
+
 .About {
   display: none;
   text-align: right;
