@@ -17,11 +17,11 @@ var pingPong = function(inputN) {
 // user logic
 $(document).ready(function() {
   $("form.ping-pong" ).submit(function(event) {
+    event.preventDefault();
     var inputN = parseInt($("#inputNumber").val());
     console.log(inputN);
     var output = pingPong(inputN);
     $(".showoutput").append("<li>" + output + "</li>");
 
-    event.preventDefault();
   });
 });
