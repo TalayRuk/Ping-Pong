@@ -14,16 +14,16 @@ $(function() {
       for (var i =1; i <= inputN; i++ ) {
 
         if (i % 3 === 0 && i % 15 !== 0) {
-          $("ul.showOutput").append("<li>" + "PING" + "</li>");
+          $("ul#showOutput").append("<li>" + "PING" + "</li>");
 
         } else if (i % 5 === 0 && i % 15 !== 0) {
-          $("ul.showOutput").append("<li>" + "PONG" + "</li>");
+          $("ul#showOutput").append("<li>" + "PONG" + "</li>");
 
         } else if (i % 15 === 0) {
-          $("ul.showOutput").append("<li>" + "PING-PING" + "</li>");
+          $("ul#showOutput").append("<li>" + "PING-PING" + "</li>");
 
         } else {
-          $("ul.showOutput").append("<li>" + i + "</li>");
+          $("ul#showOutput").append("<li>" + i + "</li>");
 
         }
       }
