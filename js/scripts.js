@@ -48,7 +48,7 @@ $(function() {
 
     }
 
-  $("ul").children.empty();
+  $("ul").detach();
   //     for (var i =1; i <= inputN; i++ ) {
   //       // $(".showoutput").append("<li>" + output + "</li>");
   //     }
