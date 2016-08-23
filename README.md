@@ -17,10 +17,10 @@ _**By Vichitra Pool (Note) on August 18th, 2016_
 |--- | :---: | :---: |
 |Only allow user to input positive number | A, a, -1, | N/A, N/A, N/A (Please enter positive number only)
 |1 is the minimum number that can be entered | 0, 1 | N/A, 1
-|Once user Input the number, format Output number as  listing that range from 1 to the user’s Input number. | 4 | 1, 2, 3, 4. (in the bullet point listing form).
-|Replace any Output numbers that can be divided by 3 with “ping” | 3, 6, 18 | ping, ping, ping
-|Replace any Output numbers that can be divided by 5 with “pong” | 5, 10, 20 | pong, pong, pong
 |Replace any Output numbers that can be divided by 15 with “ping-pong” | 15, 30, 45 | ping-pong, ping-pong, ping-pong
+|Replace any Output numbers that can be divided by 5 with “pong” | 5, 10, 20 | pong, pong, pong
+|Replace any Output numbers that can be divided by 3 with “ping” | 3, 6, 18 | ping, ping, ping
+|Once user Input the number, format Output number as  listing that range from 1 to the user’s Input number. | 4 | 1, 2, ping, 4. (in the bullet point listing form).
 |When the user input new number and hit enter, old output will clear and new output will show | (3), (7)| 1, 2, ping. (Once new input enter, Out put will show: 1, 2, ping, 4, pong, ping, 7)
 
 ## Setup/Installation Requirements
