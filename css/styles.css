@@ -24,15 +24,21 @@ body {
 .Rules {
   display: none;
   text-align: left;
+  margin-left: 30px;
+}
+
+.Rules h3 {
+  color: #922B21;
 }
 
 .About {
   display: none;
   text-align: right;
+  margin-right: 30px;
 }
 
 .About h3 {
-  color: #7B241C;
+  color: #922B21;
 }
 
 .About h4 {
