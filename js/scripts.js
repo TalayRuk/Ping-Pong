@@ -23,5 +23,6 @@ $(function() {
     var output = pingPong(inputN);
     $(".showoutput").append("<li>" + output + "</li>");
 
+    reset(output);
   });
 });
