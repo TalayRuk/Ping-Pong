@@ -10,7 +10,7 @@ $(function() {
     event.preventDefault();
     $(".Rules").hide();
     $(".About").hide();
-    $("ul").empty();
+    $("ul#showOutput").empty();
     var inputN = parseInt($("#inputNumber").val());
     var output = pingPong(inputN);
       for (var i =1; i <= inputN; i++ ) {
