@@ -21,6 +21,10 @@ body {
   color: red;
 }
 
+.seeoutput li {
+  list-style-type: none;
+}
+
 .Rules {
   display: none;
   text-align: left;
