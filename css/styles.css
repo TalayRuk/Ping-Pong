@@ -3,3 +3,14 @@ body {
   color: white;
   text-align: center;
 }
+
+navbar-brand {
+  text-align: center;
+}
+li.active {
+  item-align: right;
+}
+
+#bouncing {
+  width: 25%;
+}
