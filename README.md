@@ -15,8 +15,8 @@ _**By Vichitra Pool (Note) on August 18th, 2016_
 ## Behavior Driven Development
 |Behavior | input | output|
 |--- | :---: | :---: |
-|Only allow user to input positive number | A, a, -1, | N/A, N/A, N/A (Please enter positive number only)
-|1 is the minimum number that can be entered | 0, 1 | Enter Value greater or equal to 1, 1
+|Only allow user to input positive number | A, a, -1, | Must Enter Value greater or equal to 1
+|1 is the minimum number that can be entered | 0, 1 | Must Enter Value greater or equal to 1, 1
 |Replace any Output numbers that can be divided by 3 with “ping” | 3, 6, 18 | ping, ping, ping
 |Replace any Output numbers that can be divided by 5 with “pong” | 5, 10, 20 | pong, pong, pong
 |Replace any Output numbers that can be divided by 15 with “ping-pong” | 15, 30, 45 | ping-pong, ping-pong, ping-pong

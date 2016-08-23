@@ -17,7 +17,7 @@ var pingPong = function(inputN) {
   //     console.log(i);
   //   }
     //
-    // return result;
+    return result;
 // }
 
 }
