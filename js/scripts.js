@@ -12,3 +12,13 @@ var pingPong = function(inputN) {
     }
   }
 }
+// user logic
+$(document).ready(function() {
+  $("form.ping-pong" ).submit(function(event) {
+    event.preventDefault();
+    var inputN = $("#inputNumber").val();
+    var output = pingPong(inputN);
+    $(".showoutput").append("<li>" + output + "</li>");
+
+  });
+});
