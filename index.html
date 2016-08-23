@@ -10,15 +10,18 @@
     <title>PING PONG</title>
   </head>
   <body>
+    <div class="header">
+      <img id="bouncing" src="img/bouncing-ball.jpg" alt="bouncing ball" />
+    </div>
     <div class="navbar navbar-inverse">
         <div class="navbar-header">
-          <a href="#" class="navbar-brand">PING PONG</a>
+          <a href="#" class="navbar-brand"></a>
         </div>
         <ul class="nav navbar-nav">
-          <li class= "active"><img id="bouncing" src="img/bouncing-ball.jpg" alt="bouncing ball" /></a></li>
-          <li class= "active"><a href="#">Let's Play</a></li>
-          <li class= "active"><a href="#">Rules</a></li>
-          <li class= "active"><a href="#">About</a></li>
+          <li class= "active"><img id="bat" src="img/small pingpong icon.jpg" alt="bat icon" /></li>
+          <li class= "active"><a>Let's Play</a></li>
+          <li class= "active" id="clickRules"><a href="#" onclick=IDclick(id)>Rules</a></li>
+          <li class= "active" id="clickAbout"><a href="#"onclick=IDclick(id)>About</a></li>
         </ul>
       </div>
 
@@ -38,11 +41,29 @@
 
   <div class="seeoutput">
     <h3>RESULT</h3>
-    <ul class="showOutput">
+    <ul id="showOutput">
 
     </ul>
   </div>
-
   </div>
-  </body>
+  <div class="Rules">
+    <h3>Rules:</h3>
+    <p>When you enter your number and click "PING-PONG"'s button:</p>
+    <p>Ping Pong will count up to the number from 1 with the following exceptions:</p>
+    <ol>
+      <li>Numbers divisible by 3 become "PING"</li>
+      <li>Numbers divisible by 5 become "PONG"</li>
+      <li>Numbers divisible by 15 become "PING-PONG"</li>
+    </ol>
+  </div>
+  <div class="About">
+    <h3>About Ping Pong</h3>
+    <h4>Language:</h5>
+    <p>Javascript</p>
+    <h4>Created by;</h5>
+    <p>Vichitra Pool</p>
+    <h4>GitHub Username:</h5>
+    <p>Talayruk</p>
+  </div>
+</body>
 </html>
