@@ -25,15 +25,15 @@ $(function() {
     if (i % 3 === 0 && i % 15 != 0) {
       var output = pingPong(inputN);
       for (var i = 0; i < output.length; i++) {
-        $(".showoutput").append("<li>" + output["PING"] + "</li>");
+        $(".showoutput").append("<li>" + output[i] + "PING" + "</li>");
       }
 
       } else if (i % 5 === 0 && i % 15 != 0) {
-        $(".showoutput").append("<li>" + "PONG" + "</li>");
+        $(".showoutput").append("<li>" + output[i] + "PONG" + "</li>");
       } else if (i % 15 === 0) {
-      $(".showoutput").append("<li>" + "PING-PING" + "</li>");
+        $(".showoutput").append("<li>" +  output[i] +"PING-PING" + "</li>");
       } else {
-        $(".showoutput").append("<li>" + i + "</li>");
+        $(".showoutput").append("<li>" +  output[i] +  "</li>");
       }
   });
 });
