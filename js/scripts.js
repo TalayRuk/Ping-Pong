@@ -1,6 +1,6 @@
 // business logic
 var pingPong = function(inputN) {
-  var result = [];
+  var result = "";
   for (var i = 0; i <= inputN; i++) {
     if (i % 15 === 0) {
       result = "PING-PONG";
@@ -9,7 +9,7 @@ var pingPong = function(inputN) {
     } else if (i % 3 === 0) {
       result = "PING";
     } else {
-      result = result.push(i);
+      result = result + (1);
     }
   }
   return result;
