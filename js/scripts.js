@@ -1,27 +1,31 @@
+// business logic
 var pingPong = function(inputN) {
   var result = "";
-  if ()
+    return result;
+};
 
-  for (var n = 1; n < inputN; n++) {
-    result.push(n);
-  }
-  return result;
-
-}
-
-
-$(document).ready(function() {
+// user interface
+$(function() {
   $(".ping-pong" ).submit(function(event) {
     event.preventDefault();
+    $("ul").empty();
     var inputN = parseInt($("#inputNumber").val());
     var output = pingPong(inputN);
-        // for (var i = 1; i <= parseInt("#inputNumber"); i++) {
-        $(".showoutput").append("<li>" + output + "</li>");
-    //     // }
-    // } else {
-    //   $(".showoutput").text("Please enter only number more than 1!")
-    // }
+      for (var i =1; i <= inputN; i++ ) {
 
+        if (i % 3 === 0 && i % 15 !== 0) {
+          $("ul.showOutput").append("<li>" + "PING" + "</li>");
 
+        } else if (i % 5 === 0 && i % 15 !== 0) {
+          $("ul.showOutput").append("<li>" + "PONG" + "</li>");
+
+        } else if (i % 15 === 0) {
+          $("ul.showOutput").append("<li>" + "PING-PING" + "</li>");
+
+        } else {
+          $("ul.showOutput").append("<li>" + i + "</li>");
+
+        }
+      }
   });
 });

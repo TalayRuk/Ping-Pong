@@ -1,0 +1,21 @@
+body {
+  background-color: #003300;
+  color: white;
+  text-align: center;
+}
+/*.navbar {
+  height: 20%;
+}*/
+navbar-brand {
+  text-align: center;
+}
+li.active {
+  item-align: right;
+}
+#bouncing {
+  width:100%;
+  height: 20%;
+}
+#inputNumber {
+  color: red;
+}
