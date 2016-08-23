@@ -9,7 +9,7 @@ var pingPong = function(inputN) {
     } else if (i % 3 === 0) {
       result = "PING";
     } else {
-      result.push(i)
+       result.push[i]
     }
   }
 }
