@@ -1,19 +1,19 @@
 // business logic
 var pingPong = function(inputN) {
-  var result = "";
+  var result = [];
   for (var i = 0; i <= inputN; i++ ) {
 
-   if (i % 15 === 0) {
-    $(".showoutput").append("<li>" + "PING-PONG" + "</li>");
-
     if (i % 3 === 0 && i % 15 != 0) {
-      result = result.replace(i, "PING");
+      result.push("PING");
 
     } else if (i % 5 === 0 && i % 15 != 0) {
-      $(".showoutput").append("<li>" + "PONG" + "</li>");
+      result.push("PONG");
+
+    } else if (i % 15 === 0) {
+      result.push("PING-PING");
 
     } else {
-      $(".showoutput").append("<li>" + i + "</li>");
+      result = (i);
     }
 
   }
@@ -29,7 +29,7 @@ $(function() {
     console.log(inputN);
       var output = pingPong(inputN);
       for (var i = 1; i < inputN; i++) {
-        $(".showoutput").append("<li>" + i + "</li>");
+        $(".showoutput").append("<li>" + output[i] + "</li>");
       }
   });
 });
