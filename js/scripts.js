@@ -28,4 +28,10 @@ $(function() {
         }
       }
   });
+  $("#clickRules").click(function() {
+    $(".Rules").toggle();
+  });
+  $("#clickAbout").click(function() {
+    $(".About").toggle();
+  });
 });

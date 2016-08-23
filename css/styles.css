@@ -26,6 +26,11 @@ body {
   text-align: left;
 }
 
+.About {
+  display: none;
+  text-align: right;
+}
+
 .About h3 {
   color: #7B241C;
 }
