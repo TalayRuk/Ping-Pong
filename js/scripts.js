@@ -18,7 +18,7 @@ var pingPong = function(inputN) {
 }
 // user logic
 $(function() {
-  $("form.ping-pong" ).submit(function(event) {
+  $(".ping-pong" ).submit(function(event) {
     event.preventDefault();
     var inputN = parseInt($("#inputNumber").val());
     console.log(inputN);
