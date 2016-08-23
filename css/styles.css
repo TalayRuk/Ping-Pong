@@ -31,16 +31,16 @@ navbar-brand {
 #bouncing {
   width:100%;
   height:30%;
-  border-width: thick;
   border-style: solid;
-  border-color: #2C3E50;
+  border-width: 50px 1px 0px 1px;
+  border-color: #3c3c3c;
 }
 
 #inputNumber {
   color: red;
 }
 
-ul.showOutput {
-  align-items: center;
-
+.Rules {
+  display: none;
+  text-align: left;
 }
