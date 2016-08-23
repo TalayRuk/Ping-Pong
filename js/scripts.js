@@ -47,7 +47,7 @@ $(function() {
         }
 
         $("ul.showOutput").children("li").show();
-        $(this).remove();
+        $("li").remove();
 
         //
         // return result;
