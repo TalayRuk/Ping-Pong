@@ -3,8 +3,8 @@ body {
   color: white;
   text-align: center;
 }
-navbar {
-  width: 60%;
+.navbar {
+  height: 20%;
 }
 navbar-brand {
   text-align: center;
@@ -12,7 +12,10 @@ navbar-brand {
 li.active {
   item-align: right;
 }
-
 #bouncing {
-  width: 25%;
+  width:100%;
+  height: 20%;
+}
+#inputNumber {
+  color: red;
 }
