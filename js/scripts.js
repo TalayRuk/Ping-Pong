@@ -14,6 +14,7 @@ var pingPong = function(inputN) {
 
     } else {
       $(".showoutput").append("<li>" + i + "</li>");
+      console.log(i);
     }
 
     return result;
@@ -29,6 +30,8 @@ $(function() {
     var inputN = parseInt($("#inputNumber").val());
     console.log(inputN);
       var output = pingPong(inputN);
-        $(".showoutput").append("<li>" + i + "</li>");
+      for (var i =1; i <= inputN; i++ ) {
+        $(".showoutput").append("<li>" + output + "</li>");
+      }  
   });
 });
