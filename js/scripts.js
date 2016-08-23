@@ -1,7 +1,7 @@
 // business logic
 var pingPong = function(inputN) {
   var result = "";
-  for (var i = 0; i <= inputN; i++ ) {
+  for (var i =1; i <= inputN; i++ ) {
 
     if (i % 3 === 0 && i % 15 != 0) {
       $(".showoutput").append("<li>" + "PING" + "</li>");
@@ -16,7 +16,7 @@ var pingPong = function(inputN) {
       $(".showoutput").append("<li>" + i + "</li>");
     }
 
-    result.push(i);
+    return result;
 }
 
 }
@@ -29,8 +29,6 @@ $(function() {
     var inputN = parseInt($("#inputNumber").val());
     console.log(inputN);
       var output = pingPong(inputN);
-      for (var i = 1; i < inputN; i++) {
         $(".showoutput").append("<li>" + i + "</li>");
-      }
   });
 });
