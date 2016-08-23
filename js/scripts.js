@@ -1,19 +1,25 @@
 // business logic
 var pingPong = function(inputN) {
-  var result = [];
-  for (var n = 0; n <= inputN; n++ ) {
-    result.push(i);
-  }
+  var result = "";
+  for (var i = 0; i <= inputN; i++ ) {
 
-  //     $(".showoutput").append("<li>" + "PING" + "</li>");
-  //   } else if (i % 5 === 0 && i % 15 != 0) {
-  //     $(".showoutput").append("<li>" + "PONG" + "</li>");
-  //   } else if (i % 15 === 0) {
-  //   $(".showoutput").append("<li>" + "PING-PING" + "</li>");
-  //   } else {
-  //     $(".showoutput").append("<li>" + i + "</li>");
-  //   }
-  // }
+    if (i % 3 === 0 && i % 15 != 0) {
+      $(".showoutput").append("<li>" + "PING" + "</li>");
+
+    } else if (i % 5 === 0 && i % 15 != 0) {
+      $(".showoutput").append("<li>" + "PONG" + "</li>");
+
+    } else if (i % 15 === 0) {
+      $(".showoutput").append("<li>" + "PING-PING" + "</li>");
+
+    } else {
+      $(".showoutput").append("<li>" + i + "</li>");
+    }
+
+    result.push(i);
+}
+
+  }
   return result;
 }
 // user logic
@@ -22,11 +28,9 @@ $(function() {
     event.preventDefault();
     var inputN = parseInt($("#inputNumber").val());
     console.log(inputN);
-    if (i % 3 === 0 && i % 15 != 0) {
       var output = pingPong(inputN);
-      for (var i = 0; i < output.length; i++) {
-        $(".showoutput").append("<li>" + "PING" + "</li>");
-      }
+      for (var i = 1; i < inputN; i++) {
+
 
       } else if (i % 5 === 0 && i % 15 != 0) {
         $(".showoutput").append("<li>" + "PONG" + "</li>");
