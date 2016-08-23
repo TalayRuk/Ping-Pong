@@ -33,25 +33,22 @@ $(function() {
       for (var i =1; i <= inputN; i++ ) {
 
         if (i % 3 === 0 && i % 15 !== 0) {
-          $(".showOutput").append("<li>" + "PING" + "</li>");
+          $("ul.showOutput").append("<li>" + "PING" + "</li>");
 
         } else if (i % 5 === 0 && i % 15 !== 0) {
-          $(".showOutput").append("<li>" + "PONG" + "</li>");
+          $("ul.showOutput").append("<li>" + "PONG" + "</li>");
 
         } else if (i % 15 === 0) {
-          $(".showOutput").append("<li>" + "PING-PING" + "</li>");
+          $("ul.showOutput").append("<li>" + "PING-PING" + "</li>");
 
         } else {
-          $(".showOutput").append("<li>" + i + "</li>");
+          $("ul.showOutput").append("<li>" + i + "</li>");
           console.log(i);
         }
 
-        $("ul.showOutput").children("li").show();
-        $("li").remove();
-
-        //
-        // return result;
     }
+
+  $("ul").children.empty();
   //     for (var i =1; i <= inputN; i++ ) {
   //       // $(".showoutput").append("<li>" + output + "</li>");
   //     }
