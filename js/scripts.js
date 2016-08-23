@@ -8,6 +8,8 @@ var pingPong = function(inputN) {
 $(function() {
   $(".ping-pong" ).submit(function(event) {
     event.preventDefault();
+    $(".Rules").hide();
+    $(".About").hide();
     $("ul").empty();
     var inputN = parseInt($("#inputNumber").val());
     var output = pingPong(inputN);
@@ -29,9 +31,9 @@ $(function() {
       }
   });
   $("#clickRules").click(function() {
-    $(".Rules").toggle();
+    $(".Rules").show();
   });
   $("#clickAbout").click(function() {
-    $(".About").toggle();
+    $(".About").show();
   });
 });
