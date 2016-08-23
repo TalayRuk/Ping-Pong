@@ -16,12 +16,11 @@ var pingPong = function(inputN) {
       $(".showoutput").append("<li>" + i + "</li>");
     }
 
-    result.push(i);
-}
-
   }
   return result;
 }
+
+
 // user logic
 $(function() {
   $(".ping-pong" ).submit(function(event) {
@@ -30,13 +29,6 @@ $(function() {
     console.log(inputN);
       var output = pingPong(inputN);
       for (var i = 1; i < inputN; i++) {
-
-
-      } else if (i % 5 === 0 && i % 15 != 0) {
-        $(".showoutput").append("<li>" + "PONG" + "</li>");
-      } else if (i % 15 === 0) {
-        $(".showoutput").append("<li>" + "PING-PING" + "</li>");
-      } else {
         $(".showoutput").append("<li>" + i + "</li>");
       }
   });
