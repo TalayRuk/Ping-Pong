@@ -3,13 +3,13 @@ var pingPong = function(inputN) {
   var result = "";
   for (var i = 0; i <= inputN; i++) {
     if (i % 3 === 0 && i % 15 != 0) {
-      result = ("<li>" + "PING" + "</li>");
+      $(".showoutput").append("<li>" + "PING" + "</li>");
     } else if (i % 5 === 0 && i % 15 != 0) {
-      result = "PONG";
+      $(".showoutput").append("<li>" + "PONG" + "</li>");
     } else if (i % 15 === 0) {
-      result = "PING";
+    $(".showoutput").append("<li>" + "PING-PING" + "</li>");
     } else {
-      result = result + (i);
+      $(".showoutput").append("<li>" + i + "</li>");
     }
   }
   return result;
