@@ -1,8 +1,21 @@
 // business logic
 var pingPong = function(inputN) {
-  var result = "";
-    return result;
-};
+  var result = [];
+  return result;
+  for (var i =1; i <= inputN; i++ ) {
+
+    if (i % 3 === 0 && i % 15 !== 0) {
+      result.push("PING");
+    } else if (i % 5 === 0 && i % 15 !== 0) {
+      result.push("PONG");
+
+    } else if (i % 15 === 0) {
+      result.push("PING-PONG");
+
+    } else {
+      result.push(i);
+    }
+}
 
 // user interface
 $(function() {
@@ -13,23 +26,9 @@ $(function() {
     $("ul#showOutput").empty();
     var inputN = parseInt($("#inputNumber").val());
     var output = pingPong(inputN);
-      for (var i =1; i <= inputN; i++ ) {
-
-        if (i % 3 === 0 && i % 15 !== 0) {
-          $("ul#showOutput").append("<li>" + "PING" + "</li>");
-
-        } else if (i % 5 === 0 && i % 15 !== 0) {
-          $("ul#showOutput").append("<li>" + "PONG" + "</li>");
-
-        } else if (i % 15 === 0) {
-          $("ul#showOutput").append("<li>" + "PING-PING" + "</li>");
-
-        } else {
-          $("ul#showOutput").append("<li>" + i + "</li>");
-
-        }
-      }
+     $("#showOutput").append("<li>" + output[i] + "</li>");
   });
+
   $("#clickRules").click(function() {
     $(".Rules").show();
   });
