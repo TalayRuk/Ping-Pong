@@ -1,7 +1,7 @@
 // business logic
 var pingPong = function(inputN) {
   var result = [];
-
+  return result;
 
   for (var i = 0; i <= inputN; i++ ) {
 
