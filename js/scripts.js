@@ -1,7 +1,7 @@
 // business logic
 var pingPong = function(inputN) {
   var result = [];
-  return result;
+
 
   for (var i = 0; i <= inputN; i++ ) {
 
@@ -17,7 +17,7 @@ var pingPong = function(inputN) {
       result.push(i);
     }
   }
-
+  return result;
 };
 
 // user interface
