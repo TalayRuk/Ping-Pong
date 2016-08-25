@@ -23,7 +23,7 @@ $(function() {
     $("ul#showOutput").empty();
     var inputN = parseInt($("#inputNumber").val());
     var output = pingPong(inputN);
-    for (var i = 1; i < inputN; i++) {
+    for (var i = 1; i <= inputN; i++) {
      $("#showOutput").append("<li>" + output[i] + "</li>");
    }
   });
