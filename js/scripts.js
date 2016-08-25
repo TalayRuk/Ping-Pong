@@ -31,7 +31,7 @@ $(function() {
     var output = pingPong(inputN);
     for (var i = 1; i < inputN; i++) {
      $("#showOutput").append("<li>" + output[i] + "</li>");
-    }
+   }
 
   });
 
